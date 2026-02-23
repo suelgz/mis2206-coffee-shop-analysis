@@ -1,46 +1,43 @@
-Coffee Sales – Business Data Analytics Case
-Project Overview
+# Coffee Sales Revenue Analysis
 
-This project analyzes coffee shop transaction data to understand how revenue changes throughout the day. The goal is to identify revenue concentration patterns and provide practical business recommendations based on data analysis.
+## Purpose
+Analyze coffee shop sales data to understand hourly revenue patterns and identify improvement opportunities.
 
-Problem Statement
+## Problem
+- Revenue is uneven during the day
+- Morning hours generate most income
+- Early morning and late evening show low performance
+- Possible inefficiency in staff and resource allocation
 
-Revenue is unevenly distributed across different hours. Sales are heavily concentrated in morning hours, while early morning and late evening periods generate lower revenue. This imbalance may lead to inefficient staff scheduling and underutilized business capacity.
+## Data Processing
+- Converted `datetime` to proper datetime format
+- Created `hour_of_day` variable
+- Checked for missing values (none found)
+- Checked for invalid/negative revenue transactions (none found)
 
-Analysis Approach
+## Analysis
+- Aggregated revenue by hour
+- Visualized hourly revenue distribution
+- Examined revenue variability using a boxplot
 
-The dataset was processed and analyzed using Python. The main steps included:
+## Key Findings
+- Peak revenue hours: **8 AM – 12 PM**
+- Highest revenue hour: **10 AM**
+- Off-peak hours underperform
+- Revenue differences are mainly driven by **customer volume**
 
-Converting datetime data into proper format
+## Recommendations
+- Align staff scheduling with peak hours
+- Introduce promotions during low-demand hours
+- Increase transaction value during peak times (premium/add-ons)
+- Monitor hourly trends regularly
 
-Extracting hour_of_day for time-based analysis
+## Tools
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
 
-Checking for missing values and invalid transactions
-
-Aggregating revenue by hour
-
-Visualizing revenue distribution
-
-Key Results
-
-Revenue peaks between 8 AM and 12 PM
-
-10 AM generates the highest revenue
-
-Off-peak hours show significantly lower performance
-
-Revenue differences are mainly driven by customer volume
-
-Business Recommendations
-
-Adjust staffing based on hourly demand
-
-Introduce promotions during low-demand hours
-
-Increase transaction value during peak periods
-
-Continuously monitor revenue trends
-
-Tools Used
-
-Python, Pandas, NumPy, Matplotlib, Seaborn
+  ## Author
+  Su Elagöz
